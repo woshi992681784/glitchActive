@@ -1,0 +1,19 @@
+name: Webpage Checker
+
+on:
+  schedule:
+    - cron: '*/4 * * * *'
+
+jobs:
+  check_webpage:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+      
+    - name: Check Webpage
+      run: |
+        # 在这里添加您要执行的命令，以访问网页
+        # 例如，使用 curl 或 wget 命令
+        curl -s -o /dev/null https://decorous-cold-zucchini.glitch.me/

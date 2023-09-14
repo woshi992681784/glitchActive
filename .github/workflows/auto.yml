@@ -2,7 +2,7 @@ name: Webpage Checker
 
 on:
   schedule:
-    - cron: '*/3 1-16 * * *'
+    - cron: '*/3 1-15 * * *'
 
 jobs:
   check_webpage:
